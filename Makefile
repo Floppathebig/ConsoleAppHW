@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall -std=c99
 OBJ = main.o temp_api.o
 
 all: app
@@ -14,4 +14,4 @@ temp_api.o: temp_api.c temp_api.h
 	$(CC) $(CFLAGS) -c temp_api.c
 
 clean:
-	rm -f *.o app
+	rm -f *.o app.*
